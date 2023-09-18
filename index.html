@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&family=Nunito&family=Pridi:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div id="calculatrice">
+    <form>        
+        <div class="result">
+            <input type="text" name="result" class="text">
+        </div>
+            <div class="calculator">
+                <div class="line">
+                    <input type="button" class="button" value="7" onclick="result.value += '7' ">
+                    <input type="button" class="button" value="8" onclick="result.value += '8' ">
+                    <input type="button" class="button" value="9" onclick="result.value += '9' ">
+                    <input type="button" class="operator" value="/" onclick="result.value += '/' ">
+                </div>
+                <div class="line">
+                    <input type="button" class="button" value="4" onclick="result.value += '4' ">
+                    <input type="button" class="button" value="5" onclick="result.value += '5' ">
+                    <input type="button" class="button" value="6" onclick="result.value += '6' ">
+                    <input type="button" class="operator" value="*" onclick="result.value += '*' ">
+                </div>
+                <div class="line">
+                    <input type="button" class="button" value="1" onclick="result.value += '1' ">
+                    <input type="button" class="button" value="2" onclick="result.value += '2' ">
+                    <input type="button" class="button" value="3" onclick="result.value += '3' ">
+                    <input type="button" class="operator" value="-" onclick="result.value += '-' ">
+                </div>
+                <div class="line">
+                    <span class="button"><button class="AC" onclick="result.value = '' ">AC</button></span>
+                    <input type="button" class="button" value="0" onclick="result.value += '0' ">
+                    <input type="button" class="button" value="&equals;" onclick="result.value = eval(result.value) ">
+                    <input type="button" class="operator" value="+" onclick="result.value += '&plus;' ">
+                </div>
+            </div>
+    </form>
+    </div>
+</body>
+</html>
